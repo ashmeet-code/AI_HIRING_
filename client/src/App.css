@@ -563,5 +563,167 @@ body {
 
 .test-card p {
   margin: 0;
+  color: #6b7280;}
+  /* ===== BEAUTIFUL HOME PAGE ===== */
+
+body {
+  background: #f8f9ff;
+}
+
+.navbar {
+  height: 78px;
+  padding: 0 7%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #eeeef5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #4f46e5;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555b6e;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+.nav-links button {
+  border: none;
+  background: #4f46e5;
+  color: white;
+  padding: 11px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.2);
+}
+
+.nav-links button:hover {
+  transform: translateY(-1px);
+}
+
+.hero {
+  min-height: calc(100vh - 78px);
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  background:
+    radial-gradient(circle at 80% 30%, #e9e7ff 0, transparent 28%),
+    radial-gradient(circle at 20% 80%, #eef2ff 0, transparent 25%),
+    #f8f9ff;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -2.5px;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
   color: #6b7280;
+  max-width: 540px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-card {
+  width: 350px;
+  padding: 38px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #eeeeff;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(60, 55, 120, 0.12);
+}
+
+.hero-card h3 {
+  color: #111827;
+}
+
+.match-circle {
+  background: #f0efff;
+  border: 11px solid #6366f1;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
+
+.hero-card span {
+  display: inline-block;
+  background: #ecfdf3;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 46px;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
 }
